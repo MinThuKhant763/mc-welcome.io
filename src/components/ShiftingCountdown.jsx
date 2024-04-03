@@ -2,8 +2,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 // NOTE: Change this date to whatever date you want to countdown to :)
-let COUNTDOWN_FROM = new Date();
-COUNTDOWN_FROM.setDate(COUNTDOWN_FROM.getDate() + 1);
+const COUNTDOWN_FROM = new Date();
+
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;
@@ -27,7 +27,7 @@ const ShiftingCountdown = () => {
     }, []);
 
     const handleCountdown = () => {
-        const end = new Date(COUNTDOWN_FROM);
+        const end = COUNTDOWN_FROM.setDate(COUNTDOWN_FROM.getDate() + 1);
 
         const now = new Date();
 
