@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 // NOTE: Change this date to whatever date you want to countdown to :)
 let COUNTDOWN_FROM = new Date();
-COUNTDOWN_FORM.setDate(COUNTDOWN_FORM.getDate() + 1);
+COUNTDOWN_FROM.setDate(COUNTDOWN_FROM.getDate() + 1);
 
 const SECOND = 1000;
 const MINUTE = SECOND * 60;
