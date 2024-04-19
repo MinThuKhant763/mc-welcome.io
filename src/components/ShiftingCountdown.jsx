@@ -6,7 +6,7 @@ let Current_Date = new Date();
 let tomorrow = new Date(); 
 tomorrow.setUTCDate(tomorrow.getUTCDate() + 1);
 let nextweek = new Date();
-newxtweek.setUTCDate(nextweek.getUTCDate() +7);
+nextweek.setUTCDate(nextweek.getUTCDate() +7);
 const COUNTDOWN_FROM = nextweek;
 
 
