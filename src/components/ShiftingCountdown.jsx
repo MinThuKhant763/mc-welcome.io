@@ -27,7 +27,7 @@ const ShiftingCountdown = () => {
     }, []);
 
     const handleCountdown = () => {
-        const end = COUNTDOWN_FROM.setDate(COUNTDOWN_FROM.getDate() + 1);
+        const end = COUNTDOWN_FROM.setDate(COUNTDOWN_FROM.getDate()) + 1;
 
         const now = new Date();
 
