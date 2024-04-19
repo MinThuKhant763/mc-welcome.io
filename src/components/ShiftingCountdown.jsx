@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 let Current_Date = new Date();
 let tomorrow = new Date(); 
 tomorrow.setUTCDate(tomorrow.getUTCDate() + 1);
-const COUNTDOWN_FROM = ;
+const COUNTDOWN_FROM = tomorrow;
 
 
 const SECOND = 1000;
